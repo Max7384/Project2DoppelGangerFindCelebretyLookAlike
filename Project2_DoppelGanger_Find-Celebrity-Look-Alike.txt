@@ -9,7 +9,7 @@ Writeup:
 1.3 Iterate over the jpegs, detect the faces in each one, calculate the face descriptors, transform Dlib's format to NumPy, stack the face desciptors for each face in imags as rows, save the label for the image together with the file name, due to the structure of the file name we dont need to save the prefix of the file name seperately.
 
 I was trying out to use a grayscale image for the variables faces, shape and faceDescriptor. 
-There is some time saving but nevertheless I was not able to use a grayscale image for faceDescriptor
+There is some time saving but nevertheless I was not able to use a grayscale image for faceDescriptor.
 
 1.4 Save the descriptors and binarize the index
 
