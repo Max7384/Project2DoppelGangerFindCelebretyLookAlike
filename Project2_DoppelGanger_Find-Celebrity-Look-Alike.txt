@@ -6,9 +6,10 @@ Writeup:
 
 1.2 create a dictonary, if it is JPEG store the absolute file name in image Paths and with the same index as the file name
 
-1.3 Iterate over the jpegs, detect the faces in each one, calculate the face descriptors, transform Dlib's format to NumPy, 
-stack the face desciptors for each face in imags as rows, save the label for the image together with the file name, 
-due to the structure of the file name we dont need to save the prefix of the file name seperately
+1.3 Iterate over the jpegs, detect the faces in each one, calculate the face descriptors, transform Dlib's format to NumPy, stack the face desciptors for each face in imags as rows, save the label for the image together with the file name, due to the structure of the file name we dont need to save the prefix of the file name seperately.
+
+I was trying out to use a grayscale image for the variables faces, shape and faceDescriptor. 
+There is some time saving but nevertheless I was not able to use a grayscale image for faceDescriptor
 
 1.4 Save the descriptors and binarize the index
 
@@ -26,5 +27,4 @@ code name and the and the img file name. Concernate the both variables to get th
 2.4 Check if the mindistance is below the Threshold, use code_name as key in order to get the Name of the celebrity
 get the exact file 
 
-2.5
-Comment out the black img and add imshow of lookalikeimg
+2.5 Comment out the black img and add imshow of lookalikeimg
